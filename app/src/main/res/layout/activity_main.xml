@@ -5,30 +5,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Placeholder to choose images"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="166dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/madhacker_1"
+            android:shadowColor="@color/white"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="25"
+            android:text="@string/hello_world"
+            android:textColor="@color/black"
+            android:textSize="30sp"></TextView>
+
+        <ImageView
+            android:layout_width="275dp"
+            android:layout_height="275dp"
+            android:src="@drawable/qnmark"
+            android:layout_marginBottom="20dp"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Placeholder to choose images"
+            ></TextView>
+        <!--app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.353" />
+        app:layout_constraintVertical_bias="0.353"--> />
 
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start Game"
-        app:layout_constraintBottom_toBottomOf="parent"
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/madhacker_1"
+            android:text="Start Game"
+            android:textColor="@color/white"></Button>
+        <!--app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453" />
+        app:layout_constraintVertical_bias="0.5"--> />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,6 +37,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.Theme_AppCompat_Light_NoActionBar);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
